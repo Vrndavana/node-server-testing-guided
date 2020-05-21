@@ -28,8 +28,9 @@ module.exports = {
     },
   },
 
+   // heroku postgres
   production: {
-    client: "pg",
+    client: "pg",  //npm pg
     connection: pgConnection,
     pool: {
       min: 2,
@@ -42,4 +43,6 @@ module.exports = {
       directory: "./data/seeds",
     },
   },
+
+
 };
